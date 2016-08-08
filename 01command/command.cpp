@@ -1,9 +1,9 @@
 /*
-A command is a reified method call  that¡¯s a method call wrapped in an object.
+A command is a reified method call  thatâ€™s a method call wrapped in an object.
 */
 
 // version 01
-// ÏìÓ¦Íæ¼Ò°´¼üÊäÈë
+// å“åº”ç©å®¶æŒ‰é”®è¾“å…¥
 void InputHandler::handleInput()
 {
 	if (isPressed(BUTTON_X)) {
@@ -24,7 +24,7 @@ void InputHandler::handleInput()
 }
 
 // version 02
-// Ö§³ÖÍæ¼Ò¸Ä¼ü
+// æ”¯æŒç©å®¶æ”¹é”®
 class Command 
 {
 public:
@@ -79,7 +79,7 @@ void InputHandler::handleInput()
 }
 
 // version 03
-// Ö§³ÖÍæ¼ÒÑ¡ÔñÒª²Ù×÷µÄ½ÇÉ«
+// æ”¯æŒç©å®¶é€‰æ‹©è¦æ“ä½œçš„è§’è‰²
 class Command{
 public:
 	virtual ~Command(){}
@@ -125,7 +125,7 @@ public:
 	virtual void undo() = 0;
 };
 
-// Ö§³Ö³·ÏúºÍÖØ×ö(ÒÆ¶¯ÓÎÏ·ÖĞµÄÄ³¸öµ¥Ôª¸ñ)
+// æ”¯æŒæ’¤é”€å’Œé‡åš(ç§»åŠ¨æ¸¸æˆä¸­çš„æŸä¸ªå•å…ƒæ ¼)
 class MoveUnitCommand : public Command 
 {
 public:
