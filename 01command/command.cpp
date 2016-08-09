@@ -163,3 +163,6 @@ Command* handleInput()
 	return NULL;
 }
 
+/*
+ 命令模式就是将函数粉装成对象，并支持撤销和重做
+*/
