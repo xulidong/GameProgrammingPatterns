@@ -50,8 +50,7 @@ while (true) {
 
 	processInput();
 
-	while (lag >= MS_PER_UPDATE)
-	{
+	while (lag >= MS_PER_UPDATE) {
 		update();
 		lag -= MS_PER_UPDATE;
 	}
